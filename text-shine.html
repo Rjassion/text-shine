@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Text Shine</title>
+	<style>
+		body{
+			background:rgb(15, 14, 14);
+		}
+		.shine {
+		  	position: absolute;
+		  	left: 50%;
+		  	top: 50%;
+		  	width: 500px;
+		  	margin-left: -250px;
+		  	color: rgba(255, 255, 255,0.1);
+		  	font-size: 60px;
+		  	text-align: center;
+		  	font-weight: bold;
+		  	font-family: cursive;
+		  	margin-top: -60px;
+		  	background: -webkit-gradient(linear, left top,right top,from(#0F0E0E), to(#060606), color-stop(0.5, #F9F3F3)) 0 0 no-repeat;
+		  	-webkit-background-clip: text;
+		  	-webkit-background-size: 100px;
+		  	-webkit-animation: shine 3s ease infinite;
+		  	-wekit-background-size: 229px;
+}
+		@-webkit-keyframes shine{
+			0%{
+				background-position: top left;
+			}
+			100%{
+				background-position: top right;
+			}
+		}
+	</style>
+</head>
+<body>
+	<p class="shine">
+		I am Unique
+	</p>
+</body>
+</html>
